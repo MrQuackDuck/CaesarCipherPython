@@ -42,7 +42,7 @@ class Encryptor:
 
 index = 2
 
-caesarEncryptor = Encryptor(index, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZабвгґдеєжзиіїйклмнопрстуфхцчшщьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯ123456789!&?_\/';@$%^~`,.{}[]` ")
+caesarEncryptor = Encryptor(index, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZабвгґдеєжзиіїйклмнопрстуфхцчшщьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯ123456789!&?_\/';@$%^~,.{}[]` ")
 message = input("Write your message: ")
 
 encryptedMessage = caesarEncryptor.EncryptWithCaesarCipher(message)
