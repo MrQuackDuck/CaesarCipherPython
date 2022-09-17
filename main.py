@@ -35,14 +35,14 @@ class Encryptor:
                 resultString = resultString + self.AllowedSymbols[indexOfCurrentChar - self.Index]
         return resultString
 
+index = -10
 
-index = -3
-
-caesarEncryptor = Encryptor(index, " abcdefghijklmnopqrstuvwxyzабвгґдеєжзиіїйклмнопрстуфхцчшщьюя123456789!&?_\/';@$%^~`")
-message = input("Write your message: ")
-
-encryptedMessage = caesarEncryptor.EncryptWithCaesarCipher(message)
-decryptedMessage = caesarEncryptor.DecryptWithCaesarCipher(encryptedMessage)
-
-print(f"Your encrypyed message: {encryptedMessage}")
-print(f"Your decrypted message: {decryptedMessage}")
+while True:
+	caesarEncryptor = Encryptor(index, "abcdefghijklmnopqrstuvwxyzабвгґдеєжзиіїйклмнопрстуфхцчшщьюя0123456789!&?_\/';@$%^~.;: `")
+	message = input("Write your message: ")
+	
+	encryptedMessage = caesarEncryptor.EncryptWithCaesarCipher(message)
+	decryptedMessage = caesarEncryptor.DecryptWithCaesarCipher(encryptedMessage)
+	
+	print(f"Your encrypyed message: {encryptedMessage}")
+	print(f"Your decrypted message: {decryptedMessage}")
